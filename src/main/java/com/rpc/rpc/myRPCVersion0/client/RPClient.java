@@ -8,7 +8,7 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.Random;
 
-public class RPCClient {
+public class RPClient {
     public static void main(String[] args) {
         {
             try {
@@ -22,7 +22,7 @@ public class RPCClient {
                 objectOutputStream.writeInt(new Random().nextInt());
                 objectOutputStream.flush();
 
-                // 服务器端根据Id查询
+                // 服务器端根据Id查询，客户端拿到结果
                 User user = (User) objectInputStream.readObject();
                 System.out.println("服务器端查询的用户：" + user);
 
