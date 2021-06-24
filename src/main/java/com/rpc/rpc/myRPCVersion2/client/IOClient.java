@@ -1,7 +1,7 @@
-package com.rpc.rpc.myRPCVersion1.client;
+package com.rpc.rpc.myRPCVersion2.client;
 
-import com.rpc.rpc.myRPCVersion1.entity.RPCRequest;
-import com.rpc.rpc.myRPCVersion1.entity.RPCResponse;
+import com.rpc.rpc.myRPCVersion2.entity.RPCRequest;
+import com.rpc.rpc.myRPCVersion2.entity.RPCResponse;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
