@@ -20,7 +20,7 @@ public class TestServer {
 //        rpcServer.start(8899);
         ServiceProvider serviceProvider = new ServiceProvider(serverProvide);
         serviceProvider.provideServiceInterface(userService);
-//        serviceProvider.provideServiceInterface(blogService);
+        serviceProvider.provideServiceInterface(blogService);
         RPCServer rpcServer = new SimpleRPCServer(serverProvide);
         rpcServer.start(8899);
     }

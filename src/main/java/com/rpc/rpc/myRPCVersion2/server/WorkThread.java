@@ -45,8 +45,6 @@ public class WorkThread implements Runnable{
         Object o = serverProvide.get(request.getInterfaceName());
         try {
             // 获取服务的方法
-            System.out.println("方法名：" + request.getMethodName());
-            System.out.println("方法类型：" + request.getParamsTypes());
             Method method = o.getClass().getMethod(request.getMethodName(), request.getParamsTypes());
             Object invoke = method.invoke(o, request.getParams());
             return RPCResponse.success(invoke);

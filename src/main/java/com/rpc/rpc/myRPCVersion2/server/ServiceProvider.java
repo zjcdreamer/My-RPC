@@ -10,8 +10,10 @@ public class ServiceProvider {
     }
 
     public void provideServiceInterface(Object service){
+        // 获取service所对应的类实现的所有接口
         Class<?>[] interfaces = service.getClass().getInterfaces();
         for(Class clazz : interfaces){
+            // clazz.getName() 获取的是全类名 com.rpc.rpc.myRPCVersion2.service.XXX
             interfaceProvider.put(clazz.getName(),service);
         }
 
