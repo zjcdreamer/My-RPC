@@ -1,7 +1,7 @@
-package com.rpc.rpc.myRPCVersion3.client;
+package com.rpc.rpc.myRPCVersion4.client;
 
-import com.rpc.rpc.myRPCVersion3.entity.RPCRequest;
-import com.rpc.rpc.myRPCVersion3.entity.RPCResponse;
+import com.rpc.rpc.myRPCVersion4.entity.RPCRequest;
+import com.rpc.rpc.myRPCVersion4.entity.RPCResponse;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
