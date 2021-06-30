@@ -1,5 +1,7 @@
 package com.rpc.rpc.myRPCVersion5.server;
 
+import com.rpc.rpc.myRPCVersion5.register.ServiceRegister;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -7,10 +9,12 @@ import java.util.Map;
 
 public class SimpleRPCServer implements RPCServer {
     private Map<String, Object> serverProvide;
+    private ServiceRegister serviceRegister;
 
     public SimpleRPCServer(Map<String, Object> serverProvide) {
         this.serverProvide = serverProvide;
     }
+
 
     @Override
     public void start(int port) {

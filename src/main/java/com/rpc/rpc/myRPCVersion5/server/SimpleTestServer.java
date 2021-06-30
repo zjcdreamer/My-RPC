@@ -18,7 +18,7 @@ public class SimpleTestServer {
 //        rpcServer.start(8899);
 //        RPCServer rpcServer = new ThreadPoolRPCServer(serverProvide);
 //        rpcServer.start(8899);
-        ServiceProvider serviceProvider = new ServiceProvider(serverProvide);
+        ServiceProvider serviceProvider = new ServiceProvider("127.0.0.1", 8899);
         serviceProvider.provideServiceInterface(userService);
         serviceProvider.provideServiceInterface(blogService);
         RPCServer rpcServer = new SimpleRPCServer(serverProvide);

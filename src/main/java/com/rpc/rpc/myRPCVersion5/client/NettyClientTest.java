@@ -7,7 +7,7 @@ import com.rpc.rpc.myRPCVersion5.service.UserService;
 
 public class NettyClientTest {
     public static void main(String[] args) {
-        NettyRPClient nettyRPClient = new NettyRPClient("localhost", 8899);
+        NettyRPClient nettyRPClient = new NettyRPClient();
         ClientProxy clientProxy = new ClientProxy(nettyRPClient);
 
         UserService userService = clientProxy.getProxy(UserService.class);

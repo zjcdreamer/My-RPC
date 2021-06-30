@@ -8,7 +8,7 @@ public class NettyServerTest {
         UserService userService = new UserServiceImpl();
         BlogService blogService = new BlogServiceImpl();
 
-        ServiceProvider serviceProvider = new ServiceProvider();
+        ServiceProvider serviceProvider = new ServiceProvider("127.0.0.1", 8899);
         serviceProvider.provideServiceInterface(userService);
         serviceProvider.provideServiceInterface(blogService);
 

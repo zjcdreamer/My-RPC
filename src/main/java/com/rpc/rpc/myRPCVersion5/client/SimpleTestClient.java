@@ -11,7 +11,7 @@ import java.util.UUID;
 public class SimpleTestClient {
     public static void main(String[] args) {
         // 指定IP和端口号
-        SimpleRPClient simpleRPClient = new SimpleRPClient("localhost", 8899);
+        SimpleRPClient simpleRPClient = new SimpleRPClient();
         ClientProxy clientProxy = new ClientProxy(simpleRPClient);
         UserService proxy = clientProxy.getProxy(UserService.class);
         // 通过代理调用目标对象方法
